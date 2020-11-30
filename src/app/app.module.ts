@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    ...Components
+    ...Components,
   ],
   imports: [
     BrowserModule,
