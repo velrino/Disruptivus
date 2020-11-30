@@ -1,5 +1,10 @@
 ::ng-deep {
+    .card {
+        background: rgba(8, 8, 8, 0.7) !important;
+        color: white;
+    }
     .btn-link {
         text-transform: uppercase !important;
+        color: white !important;
     }
 }
