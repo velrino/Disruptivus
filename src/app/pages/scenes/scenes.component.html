@@ -1,13 +1,18 @@
 <div class="container">
     <div class="row justify-content-md-center mt-5">
         <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
+            <ngb-accordion [closeOthers]="true" activeIds="static-0">
+                <ngb-panel *ngFor="let item of book;  let i = index" id="static-{{i}}">
+                    <ng-template ngbPanelTitle> {{item.chapter}} </ng-template>
+                    <ng-template ngbPanelContent>
+                        <div class="row">
+                            <div class="col-md-3" *ngFor="let itemImg of item.imgs">
+                                <img [src]="itemImg.src" class="img-thumbnail">
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
         </div>
     </div>
 </div>

@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Nasalization', 'arial', sans-serif;
+    font-family: 'Nasalization', 'arial', sans-serif !important;
 }
 
 canvas {
@@ -48,9 +48,9 @@ body .center-all-content {
 
 .title {
     font-size: 50px;
-    color: white;
-    border-top: 5px solid #fff;
-    border-bottom: 5px solid #fff;
+    color: #ffc800;
+    border-top: 5px solid #ffc800;
+    border-bottom: 5px solid #ffc800;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     border-radius: 10%;
 }
@@ -67,3 +67,8 @@ a .fa-instagram {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+
+/* Importing Bootstrap SCSS file. */
+
+@import '~bootstrap/scss/bootstrap';
