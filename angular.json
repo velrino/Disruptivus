@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "disruptivus"
+    }
+  },
+  "defaultProject": "disruptivus",
+  "cli": {
+    "analytics": "6d307735-992e-4ec8-a727-10c015294725"
+  }
 }
