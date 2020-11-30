@@ -13,7 +13,9 @@
                     </div> -->
                 </div>
                 <div class="card-footer text-muted">
-                    2 days ago
+                    <a *ngFor="let social of socials" [href]="social.link" target="_blank" class="mx-1">
+                        <i [class]="social.class"></i>
+                    </a>
                 </div>
             </div>
         </div>
