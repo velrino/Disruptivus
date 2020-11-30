@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Disruptivus</title>
     <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
     <meta name="description" content="Disruptivus, saga de livros">
@@ -32,20 +32,20 @@
             camera.rotation.y = -0.12;
             camera.rotation.z = 0.27;
 
-            let ambient = new THREE.AmbientLight(0x555555);
+            let ambient = new THREE.AmbientLight(0x55d3f9);
             scene.add(ambient);
 
-            let directionalLight = new THREE.DirectionalLight(0xff8c19);
+            let directionalLight = new THREE.DirectionalLight(0x7e1999);
             directionalLight.position.set(0, 0, 1);
             scene.add(directionalLight);
 
-            let orangeLight = new THREE.PointLight(0xcc6600, 50, 300, 1.7);
+            let orangeLight = new THREE.PointLight(0x7e1999, 50, 300, 1.7);
             orangeLight.position.set(200, 300, 100);
             scene.add(orangeLight);
-            let redLight = new THREE.PointLight(0x10141b, 50, 350, 1.7);
+            let redLight = new THREE.PointLight(0x55d3f9, 50, 300, 1.7);
             redLight.position.set(100, 300, 100);
             scene.add(redLight);
-            let blueLight = new THREE.PointLight(0x26a69a, 50, 450, 1.7);
+            let blueLight = new THREE.PointLight(0x26a69a, 50, 400, 1.7);
             blueLight.position.set(300, 300, 200);
             scene.add(blueLight);
 
