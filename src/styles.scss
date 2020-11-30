@@ -11,6 +11,15 @@ canvas {
     z-index: -99;
 }
 
+@font-face {
+    font-family: Nasalization;
+    src: url(assets/nasalization/nasalization-rg.ttf) format("opentype");
+}
+
+body {
+    font-family: 'Nasalization', 'arial', sans-serif;
+}
+
 .login-div {
     max-width: 430px;
     padding: 35px;
@@ -26,12 +35,23 @@ canvas {
 }
 
 body .center-all-content {
-    width: 100vw;
+    // width: 100vw;
     height: 100vh;
-    margin: 0;
+    // margin: 0;
     // background: black;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-primary {
+    background-color: #26a69a !important;
+    border-color: #26a69a !important;
+}
+
+.title {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
