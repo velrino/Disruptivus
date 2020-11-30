@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-scenes',
@@ -34,7 +35,19 @@ export class ScenesComponent implements OnInit {
       ]
     }
   ]
-  constructor() { }
+
+  dataModal = null;
+
+  constructor(private modalService: NgbModal) { }
+
+  openModal(content: any, data: any) {
+    this.dataModal = data;
+
+    this.modalService.open(content, { backdrop: 'static', size: 'xl' }).result.then((result) => {
+    }, (reason) => {
+      // this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
 
   ngOnInit(): void {
   }
