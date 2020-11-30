@@ -35,11 +35,7 @@ body {
 }
 
 body .center-all-content {
-    // width: 100vw;
     height: 100vh;
-    // margin: 0;
-    // background: black;
-    // overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +50,11 @@ body .center-all-content {
     font-size: 50px;
     color: #fff;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+hr {
+    background-color: white !important;
+    height: 5px;
 }
