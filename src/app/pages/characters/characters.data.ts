@@ -42,7 +42,7 @@ export const CharactersData: ICharactersData[] = [
     {
         alias: "katilabeth",
         name: "Katilabeth Rodrigues",
-        img: "/assets/imgs/characters/amy-salvatore.png",
+        img: "/assets/imgs/characters/katilabeth-rodrigues.png",
         thumbnail: "/assets/imgs/characters/thumbnail-katilabeth.png",
         skill: "justiça",
         text: "Katilabeth é lorem ipsum"
@@ -74,7 +74,7 @@ export const CharactersData: ICharactersData[] = [
     {
         alias: "Pandora",
         name: "Pandora Vihumani",
-        img: "/assets/imgs/characters/amy-salvatore.png",
+        img: "/assets/imgs/characters/pandora-vihumani.png",
         thumbnail: "/assets/imgs/characters/thumbnail-pandora.png",
         skill: "maquiavélica",
         text: "Pandora é lorem ipsum"
