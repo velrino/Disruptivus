@@ -1,12 +1,13 @@
+<app-navbar></app-navbar>
+<div class="pt-5"></div>
 <div class="container">
-    <button type="button" class="btn btn-primary mt-5" routerLink="/home">Home</button>
     <div class="row justify-content-md mt-5" *ngIf="characterData" id="character-data">
         <div class="col-12 col-md-6">
             <img [src]="characterData.img" class="img-fluid">
         </div>
         <div class="col-12 col-md-6">
             <div class="bg-primary-color text-white text-center text-uppercase rounded-top">
-                <h3>{{characterData.name}}</h3>
+                <h4>{{characterData.name}}</h4>
                 <h5>{{characterData.skill}}</h5>
             </div>
             <p class="bg-dark-opacy text-white text-justify p-3">{{characterData.text}}</p>

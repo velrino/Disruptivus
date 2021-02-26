@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ScenesComponent } from './pages/scenes/scenes.component';
+// Shared Componentes
+import { NavbarSharedComponent } from './shared/components/navbar/navbar.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,6 +20,7 @@ export const Components = [
   AppComponent,
   CharactersComponent,
   HomeComponent,
+  NavbarSharedComponent,
   ScenesComponent
 ];
 
