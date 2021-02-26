@@ -6,6 +6,8 @@
     src: url(assets/nasalization/nasalization-rg.ttf) format("opentype");
 }
 
+$primary-color: #ffad15;
+$secundary-color: #FFD600;
 body {
     font-family: 'Nasalization', 'arial', sans-serif !important;
 }
@@ -39,11 +41,8 @@ body .center-all-content {
 }
 
 .btn-primary {
-    background-color: #347e94 !important;
-    border-color: #347e94 !important;
-    // 10141b
-    // 26a69a
-    // 6b63b5
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
 }
 
 .title {
@@ -66,4 +65,8 @@ a .fa-instagram {
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.text-primary-color {
+    color: $primary-color;
 }
