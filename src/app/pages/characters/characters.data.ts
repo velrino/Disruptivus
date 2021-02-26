@@ -49,7 +49,7 @@ export const CharactersData: ICharactersData[] = [
     },
     {
         alias: "ginoide-02",
-        name: "Nolan Genrizeo",
+        name: "Ginoide-02",
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-ginoide-02.png",
         skill: "autoconsciência",
