@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="pt-5"></div>
 <div class="container">
-    <div class="row justify-content-md mt-5" *ngIf="characterData" id="character-data">
+    <div class="row justify-content-md-center mt-5" *ngIf="characterData" id="character-data">
         <div class="col-12 col-md-6">
             <img [src]="characterData.img" class="img-fluid">
         </div>
@@ -13,7 +13,13 @@
             <!-- <p class="bg-dark-opacy text-white text-justify p-3">{{characterData.text}}</p> -->
         </div>
     </div>
-    <div class="row justify-content-md mt-5 mb-5">
+    <div class="row justify-content-md-center mt-5 mb-5">
+
+    </div>
+    <div class="row justify-content-md-center mt-5 mb-5">
+        <div class="col-12 mb-3">
+            <h5 class="text-primary-color text-center text-uppercase">Clique no personagem</h5>
+        </div>
         <div *ngFor="let character of charactersData" (click)="showCharacter(character)" class="col-6 col-md-2 p-1">
             <div class="relative_box">
                 <img [src]="character.thumbnail" class="character-thumbnail">
