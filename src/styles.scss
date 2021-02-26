@@ -1,22 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '~bootstrap/scss/bootstrap';
+@import 'variables.scss';
 @font-face {
     font-family: Nasalization;
     src: url(assets/nasalization/nasalization-rg.ttf) format("opentype");
 }
 
-$primary-color: #ffad15;
-$secundary-color: #FFD600;
 body {
     font-family: 'Nasalization', 'arial', sans-serif !important;
 }
 
 canvas {
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: -99;
+    position: fixed;
 }
 
 .login-div {
@@ -67,6 +68,10 @@ a .fa-instagram {
     -webkit-background-clip: text;
 }
 
+.bg-primary-color {
+    background-color: $primary-color;
+}
+
 .text-primary-color {
     color: $primary-color;
 }
@@ -75,4 +80,12 @@ a .fa-instagram {
     padding: 0.75rem 1.25rem;
     background-color: none;
     border-top: none;
+}
+
+.bg-dark-opacy {
+    background-color: #1010107a;
+}
+
+.btn {
+    text-transform: uppercase;
 }

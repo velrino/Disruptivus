@@ -1,0 +1,46 @@
+@import '../../../variables.scss';
+::ng-deep {
+    .card {
+        background: rgba(8, 8, 8, 0.7) !important;
+        color: white;
+    }
+    .btn-link {
+        text-transform: uppercase !important;
+        color: white !important;
+    }
+}
+
+.relative_box {
+    position: relative;
+    // width:400px;
+    // float:left;
+}
+
+.relative_box img {
+    width: 100%;
+}
+
+.relative_box span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $primary-color;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.character-thumbnail {
+    border: 1px solid #152229;
+    background: radial-gradient(ellipse at center, #1e2938 0, #080808 100%);
+    // border: 2px $primary-color solid;
+    // max-width: 175px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character-thumbnail:hover {
+    border: 2px $primary-color solid;
+}

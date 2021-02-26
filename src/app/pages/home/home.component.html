@@ -4,15 +4,11 @@
             <!-- <h1 class="title mb-3 text-primary-color">DISRUPTIVUS</h1> -->
             <img src="/assets/logo.png" height="120" class="animate__animated animate__backInDown">
             <div class="card dark-div mt-2">
-                <div class="card-body" class="animate__animated animate__backInLeft">
+                <div class="card-body animate__animated animate__backInLeft">
                     <p class="card-text">Veja:</p>
-                    <a routerLink="/scenes" class="btn btn-primary mr-2 btn-block">Cenas</a>
-                    <a href="#" class="btn btn-primary btn-block">Personagens</a>
+                    <a routerLink="/scenes" class="btn btn-primary mr-2 btn-block"><span>Cenas</span></a>
+                    <a routerLink="/characters" class="btn btn-primary btn-block">Personagens</a>
                     <a href="https://velrino.github.io/" target="_blank" class="btn btn-primary btn-block">Criador</a>
-                    <!-- <div class="mt-2">
-                        <p class="card-text">Sobre o criador:</p>
-                        <a href="https://velrino.github.io/" target="_blank" class="btn btn-primary mr-2">Criador</a>
-                    </div> -->
                 </div>
                 <div class="card-footer text-muted">
                     <a *ngFor="let social of socials" [href]="social.link" target="_blank" class="mx-1">
@@ -20,7 +16,7 @@
                     </a>
                 </div>
                 <div class="card-footer">
-                    <a href="https://velrino.github.io/" class="text-primary-color">© Denis "Velrino" Magalhães</a>
+                    <a href="https://velrino.github.io/" target="_blank" class="text-primary-color">© Denis "Velrino" Magalhães</a>
                 </div>
             </div>
         </div>
