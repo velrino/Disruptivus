@@ -36,7 +36,7 @@ export const CharactersData: ICharactersData[] = [
         name: "Grazielle Barton",
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-grazielle.png",
-        skill: "justiça",
+        skill: "brigona",
         text: "Grazielle é lorem ipsum"
     },
     {
@@ -68,7 +68,7 @@ export const CharactersData: ICharactersData[] = [
         name: "Paulo Mourezie",
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-paulo.png",
-        skill: "furtiva",
+        skill: "tecnologia",
         text: "Paulo é lorem ipsum"
     },
     {
