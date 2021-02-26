@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CharactersData, ICharactersData } from './characters.data';
@@ -12,7 +13,7 @@ export class CharactersComponent implements OnInit {
   characterData: ICharactersData;
   charactersData = CharactersData;
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router, private viewportScroller: ViewportScroller) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -31,6 +32,7 @@ export class CharactersComponent implements OnInit {
       this.router.navigate(['/characters']);
     }
     this.characterData = getCharacterData[0];
+    this.viewportScroller.scrollToAnchor('character-data');
   }
 
 }
