@@ -18,9 +18,9 @@ export const CharactersData: ICharactersData[] = [
     {
         alias: "dario",
         name: "Dario Ambiteus",
-        img: "/assets/imgs/characters/amy-salvatore.png",
+        img: "/assets/imgs/characters/dario-ambiteus.png",
         thumbnail: "/assets/imgs/characters/thumbnail-dario.png",
-        skill: "furtiva",
+        skill: "traiçoeiro",
         text: "Dario é lorem ipsum"
     },
     {
