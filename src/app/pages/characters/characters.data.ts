@@ -26,9 +26,9 @@ export const CharactersData: ICharactersData[] = [
     {
         alias: "dominike",
         name: "Dominike Vihumani",
-        img: "/assets/imgs/characters/amy-salvatore.png",
+        img: "/assets/imgs/characters/dominike-vihumani.png",
         thumbnail: "/assets/imgs/characters/thumbnail-dominike.png",
-        skill: "biotecnologia",
+        skill: "Biotecnóloga",
         text: "Dominike é lorem ipsum"
     },
     {
