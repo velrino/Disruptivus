@@ -41,11 +41,6 @@ body .center-all-content {
     align-items: center;
 }
 
-.btn-primary {
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
-}
-
 .title {
     font-size: 50px;
     color: #f0f0f0;
@@ -69,7 +64,7 @@ a .fa-instagram {
 }
 
 .bg-primary-color {
-    background-color: $primary-color;
+    background-color: $primary-color !important;
 }
 
 .text-primary-color {
@@ -96,4 +91,14 @@ a .fa-instagram {
 
 .navbar-dark .navbar-toggler {
     border: none !important;
+}
+
+.btn-secondary {
+    background-color: #26292e !important;
+    border-color: #ffad15 !important;
+}
+
+.btn-primary {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
 }

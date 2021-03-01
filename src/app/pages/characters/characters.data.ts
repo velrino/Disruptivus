@@ -5,13 +5,14 @@ export interface ICharactersData {
     thumbnail: string;
     skill: string;
     text: string;
-    tags: TagsEnum[];
+    tags: CharactersTagsEnum[];
 }
 
-export const enum TagsEnum {
+export const enum CharactersTagsEnum {
+    All = 'All',
     CoProtagonist = 'CoProtagonist',
     Protagonist = 'protagonist',
-    Supporting = 'supporting'
+    Supporting = 'supporting',
 }
 
 export const CharactersData: ICharactersData[] = [
@@ -22,7 +23,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-amy.png",
         skill: "furtiva",
         text: "Amy é lorem ipsum",
-        tags: [TagsEnum.Protagonist]
+        tags: [CharactersTagsEnum.Protagonist]
     },
     {
         alias: "bruno",
@@ -31,7 +32,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-bruno.png",
         skill: "finanças",
         text: "Bruno é lorem ipsum",
-        tags: [TagsEnum.Supporting]
+        tags: [CharactersTagsEnum.Supporting]
 
     },
     {
@@ -41,7 +42,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-dario.png",
         skill: "traiçoeiro",
         text: "Dario é lorem ipsum",
-        tags: [TagsEnum.Supporting]
+        tags: [CharactersTagsEnum.Supporting]
     },
     {
         alias: "dominike",
@@ -50,7 +51,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-dominike.png",
         skill: "Biotecnóloga",
         text: "Dominike é lorem ipsum",
-        tags: [TagsEnum.CoProtagonist]
+        tags: [CharactersTagsEnum.CoProtagonist]
     },
     {
         alias: "donaka",
@@ -59,7 +60,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-donaka.png",
         skill: "maquiavélico",
         text: "Donaka é lorem ipsum",
-        tags: [TagsEnum.CoProtagonist]
+        tags: [CharactersTagsEnum.Supporting]
     },
     {
         alias: "grazielle",
@@ -68,7 +69,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-grazielle.png",
         skill: "brigona",
         text: "Grazielle é lorem ipsum",
-        tags: [TagsEnum.CoProtagonist]
+        tags: [CharactersTagsEnum.CoProtagonist]
     },
     {
         alias: "katilabeth",
@@ -77,7 +78,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-katilabeth.png",
         skill: "justiça",
         text: "Katilabeth é lorem ipsum",
-        tags: [TagsEnum.Protagonist]
+        tags: [CharactersTagsEnum.Protagonist]
     },
     {
         alias: "ginoide-02",
@@ -86,7 +87,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-ginoide-02.png",
         skill: "autoconsciência",
         text: "Ginoide-02 é lorem ipsum",
-        tags: [TagsEnum.Protagonist]
+        tags: [CharactersTagsEnum.Protagonist]
     },
     {
         alias: "nolan",
@@ -95,7 +96,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-nolan.png",
         skill: "hacking",
         text: "Nolan é lorem ipsum",
-        tags: [TagsEnum.CoProtagonist]
+        tags: [CharactersTagsEnum.CoProtagonist]
     },
     {
         alias: "paulo",
@@ -104,7 +105,7 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-paulo.png",
         skill: "tecnologia",
         text: "Paulo é lorem ipsum",
-        tags: [TagsEnum.CoProtagonist]
+        tags: [CharactersTagsEnum.CoProtagonist]
     },
     {
         alias: "Fayola",
@@ -113,6 +114,6 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-pandora.png",
         skill: "maquiavélica",
         text: "Pandora é lorem ipsum",
-        tags: [TagsEnum.Protagonist]
+        tags: [CharactersTagsEnum.Protagonist]
     },
 ]
