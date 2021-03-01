@@ -5,7 +5,15 @@ export interface ICharactersData {
     thumbnail: string;
     skill: string;
     text: string;
+    tags: TagsEnum[];
 }
+
+export const enum TagsEnum {
+    CoProtagonist = 'CoProtagonist',
+    Protagonist = 'protagonist',
+    Supporting = 'supporting'
+}
+
 export const CharactersData: ICharactersData[] = [
     {
         alias: "amy",
@@ -13,7 +21,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-amy.png",
         skill: "furtiva",
-        text: "Amy é lorem ipsum"
+        text: "Amy é lorem ipsum",
+        tags: [TagsEnum.Protagonist]
     },
     {
         alias: "bruno",
@@ -21,7 +30,9 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/bruno-diniz.png",
         thumbnail: "/assets/imgs/characters/thumbnail-bruno.png",
         skill: "finanças",
-        text: "Bruno é lorem ipsum"
+        text: "Bruno é lorem ipsum",
+        tags: [TagsEnum.Supporting]
+
     },
     {
         alias: "dario",
@@ -29,7 +40,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/dario-ambiteus.png",
         thumbnail: "/assets/imgs/characters/thumbnail-dario.png",
         skill: "traiçoeiro",
-        text: "Dario é lorem ipsum"
+        text: "Dario é lorem ipsum",
+        tags: [TagsEnum.Supporting]
     },
     {
         alias: "dominike",
@@ -37,7 +49,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/dominike-vihumani.png",
         thumbnail: "/assets/imgs/characters/thumbnail-dominike.png",
         skill: "Biotecnóloga",
-        text: "Dominike é lorem ipsum"
+        text: "Dominike é lorem ipsum",
+        tags: [TagsEnum.CoProtagonist]
     },
     {
         alias: "donaka",
@@ -45,7 +58,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/donaka-ruzuel.png",
         thumbnail: "/assets/imgs/characters/thumbnail-donaka.png",
         skill: "maquiavélico",
-        text: "Donaka é lorem ipsum"
+        text: "Donaka é lorem ipsum",
+        tags: [TagsEnum.CoProtagonist]
     },
     {
         alias: "grazielle",
@@ -53,7 +67,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-grazielle.png",
         skill: "brigona",
-        text: "Grazielle é lorem ipsum"
+        text: "Grazielle é lorem ipsum",
+        tags: [TagsEnum.CoProtagonist]
     },
     {
         alias: "katilabeth",
@@ -61,7 +76,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/katilabeth-rodrigues.png",
         thumbnail: "/assets/imgs/characters/thumbnail-katilabeth.png",
         skill: "justiça",
-        text: "Katilabeth é lorem ipsum"
+        text: "Katilabeth é lorem ipsum",
+        tags: [TagsEnum.Protagonist]
     },
     {
         alias: "ginoide-02",
@@ -69,7 +85,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-ginoide-02.png",
         skill: "autoconsciência",
-        text: "Ginoide-02 é lorem ipsum"
+        text: "Ginoide-02 é lorem ipsum",
+        tags: [TagsEnum.Protagonist]
     },
     {
         alias: "nolan",
@@ -77,7 +94,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-nolan.png",
         skill: "hacking",
-        text: "Nolan é lorem ipsum"
+        text: "Nolan é lorem ipsum",
+        tags: [TagsEnum.CoProtagonist]
     },
     {
         alias: "paulo",
@@ -85,7 +103,8 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/amy-salvatore.png",
         thumbnail: "/assets/imgs/characters/thumbnail-paulo.png",
         skill: "tecnologia",
-        text: "Paulo é lorem ipsum"
+        text: "Paulo é lorem ipsum",
+        tags: [TagsEnum.CoProtagonist]
     },
     {
         alias: "Fayola",
@@ -93,6 +112,7 @@ export const CharactersData: ICharactersData[] = [
         img: "/assets/imgs/characters/pandora-vihumani.png",
         thumbnail: "/assets/imgs/characters/thumbnail-pandora.png",
         skill: "maquiavélica",
-        text: "Pandora é lorem ipsum"
+        text: "Pandora é lorem ipsum",
+        tags: [TagsEnum.Protagonist]
     },
 ]

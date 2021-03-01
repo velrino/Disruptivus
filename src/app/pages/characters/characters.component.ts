@@ -11,7 +11,7 @@ import { CharactersData, ICharactersData } from './characters.data';
 export class CharactersComponent implements OnInit {
   characterName: string;
   characterData: ICharactersData;
-  charactersData = this.orderDataByName();
+  charactersData = this.orderDataByName(CharactersData);
 
   constructor(private route: ActivatedRoute, private router: Router, private viewportScroller: ViewportScroller) { }
 
@@ -22,8 +22,8 @@ export class CharactersComponent implements OnInit {
     });
   }
 
-  orderDataByName() {
-    return CharactersData.sort(
+  orderDataByName(data: ICharactersData[]) {
+    return data.sort(
       (a, b) => a.alias.toLocaleLowerCase() !== b.alias.toLocaleLowerCase()
         ? a.alias.toLocaleLowerCase() < b.alias.toLocaleLowerCase()
           ? -1 : 1 : 0);
