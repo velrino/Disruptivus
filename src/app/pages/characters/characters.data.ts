@@ -16,6 +16,14 @@ export const CharactersData: ICharactersData[] = [
         text: "Amy é lorem ipsum"
     },
     {
+        alias: "bruno",
+        name: "Bruno Diniz",
+        img: "/assets/imgs/characters/bruno-diniz.png",
+        thumbnail: "/assets/imgs/characters/thumbnail-bruno.png",
+        skill: "finanças",
+        text: "Bruno é lorem ipsum"
+    },
+    {
         alias: "dario",
         name: "Dario Ambiteus",
         img: "/assets/imgs/characters/dario-ambiteus.png",
@@ -30,6 +38,14 @@ export const CharactersData: ICharactersData[] = [
         thumbnail: "/assets/imgs/characters/thumbnail-dominike.png",
         skill: "Biotecnóloga",
         text: "Dominike é lorem ipsum"
+    },
+    {
+        alias: "donaka",
+        name: "Donaka Ruzuel",
+        img: "/assets/imgs/characters/donaka-ruzuel.png",
+        thumbnail: "/assets/imgs/characters/thumbnail-donaka.png",
+        skill: "maquiavélico",
+        text: "Donaka é lorem ipsum"
     },
     {
         alias: "grazielle",
@@ -72,8 +88,8 @@ export const CharactersData: ICharactersData[] = [
         text: "Paulo é lorem ipsum"
     },
     {
-        alias: "Pandora",
-        name: "Pandora Vihumani",
+        alias: "Fayola",
+        name: "Fayola Zaeneryen",
         img: "/assets/imgs/characters/pandora-vihumani.png",
         thumbnail: "/assets/imgs/characters/thumbnail-pandora.png",
         skill: "maquiavélica",
